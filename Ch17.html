@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Gender in Global Politics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #7e22ce; /* Purple */
+            border-color: #7e22ce;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 17: Gender in Global Politics</h1>
+            <p class="text-lg md:text-xl text-slate-300">A Gendered World</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: Sex vs. Gender -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-purple-800">Sex vs. Gender</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Feminist analysis begins with a crucial distinction between 'sex' and 'gender'. Understanding this difference is key to seeing how global politics is 'gendered'.</p>
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Sex</h3>
+                    <p>A biological category. It refers to the physical and genetic differences between males and females.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Gender</h3>
+                    <p>A social and cultural construct. It refers to the different roles, expectations, and identities that society attaches to being male or female. Gender is not what we are; it is what we do.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Feminist Theories -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-purple-800">Feminist Theories of Global Politics</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">There is no single feminist theory. Different feminist traditions offer different explanations for gender inequality and different visions for how to achieve a more just world. <br/><strong class="text-purple-700">Click the tabs to explore the main perspectives.</strong></p>
+
+            <div class="mt-12 bg-white rounded-xl shadow-xl border border-gray-200 p-4 md:p-8">
+                <!-- Tabs -->
+                <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b border-gray-200 mb-6 font-bold text-lg text-gray-500">
+                    <div class="interactive-tab active py-3 px-5 text-center" data-tab="1">Liberal Feminism</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="2">Critical Feminism</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="3">Postcolonial Feminism</div>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="tab-content-container">
+                    <div id="tab-1" class="tab-content active p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Liberal Feminism: Equal Rights</h3>
+                        <p class="text-lg text-gray-600">This is the mainstream approach. It argues that gender inequality is caused by legal and institutional discrimination against women. The solution is to remove these barriers and ensure that women have the same rights and opportunities as men.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Critical Feminism: Deconstructing Patriarchy</h3>
+                        <p class="text-lg text-gray-600">This perspective argues that gender inequality is rooted in a deeper structure of male dominance called 'patriarchy'. It is not just about equal rights; it is about challenging and overthrowing the social, economic, and political structures that perpetuate gender oppression.</p>
+                    </div>
+                    <div id="tab-3" class="tab-content p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Postcolonial Feminism: Intersecting Oppressions</h3>
+                        <p class="text-lg text-gray-600">This perspective criticizes mainstream feminism for often focusing on the experiences of white, middle-class women in the West. It highlights how gender intersects with other forms of oppression, such as racism and colonialism, and argues that the experience of being a woman is very different in the Global South.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Gender in the Global Economy and War -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-purple-800">Gender in Action: Economy and War</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Applying a 'gender lens' to global politics reveals hidden inequalities and provides new insights into key issues.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Women in the Global Economy</h3>
+                    <p>Globalization has been a double-edged sword for women. While it has created new employment opportunities, women are often concentrated in low-paid, insecure jobs in industries like textiles and electronics. This is sometimes called the 'feminization of poverty'.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Gender and War</h3>
+                    <p>War affects men and women in profoundly different ways. While men are more likely to be combatants, women and children make up the vast majority of civilian casualties and refugees. Furthermore, sexual violence, especially rape, has increasingly been used as a systematic weapon of war.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 4: Institutionalizing Gender Equity -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">Institutionalizing Gender Equity</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">The international community has taken significant steps to recognize and address gender inequality, a process often called 'gender mainstreaming'.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-purple-400 mb-2">The UN and Women's Rights</h3>
+                    <p>The United Nations has been at the forefront of this effort. The <strong>1979 Convention on the Elimination of All Forms of Discrimination Against Women (CEDAW)</strong> is often described as an international bill of rights for women. More recently, <strong>UN Women</strong> was created to coordinate the UN's work on gender equality.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-purple-400 mb-2">UN Security Council Resolution 1325</h3>
+                    <p>This landmark 2000 resolution recognized the disproportionate impact of war on women and called for women to be given a greater role in peace negotiations and post-conflict reconstruction. It marked a major step in linking women's experiences to matters of international peace and security.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 17 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.interactive-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

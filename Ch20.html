@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Regionalism and Global Politics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #1d4ed8; /* Blue */
+            border-color: #1d4ed8;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 20: Regionalism & Global Politics</h1>
+            <p class="text-lg md:text-xl text-slate-300">Building Blocs in a Globalizing World</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: What is Regionalism? -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-blue-800">What is Regionalism?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Regionalism is a process through which states in a particular geographic area deepen their cooperation and integration. It can range from simple economic cooperation to the creation of powerful, state-like supranational bodies. Is regionalism a stepping stone to globalization, or a stumbling block that creates a more divided world?</p>
+        </section>
+
+        <!-- Section 2: Why Regionalism? -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-blue-800">Explaining Regionalism</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Why do states choose to cooperate at a regional level? The major theories offer different explanations. <br/><strong class="text-blue-700">Click the tabs to compare them.</strong></p>
+
+            <div class="mt-12 bg-white rounded-xl shadow-xl border border-gray-200 p-4 md:p-8">
+                <!-- Tabs -->
+                <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b border-gray-200 mb-6 font-bold text-lg text-gray-500">
+                    <div class="interactive-tab active py-3 px-5 text-center" data-tab="1">Federalism</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="2">Functionalism</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="3">Neofunctionalism</div>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="tab-content-container">
+                    <div id="tab-1" class="tab-content active p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Federalism: A Political Project</h3>
+                        <p class="text-lg text-gray-600">This view sees regionalism as a political project driven by a desire to create a larger political union (a "United States of Europe," for example). It is a top-down process led by political elites.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Functionalism: Form Follows Function</h3>
+                        <p class="text-lg text-gray-600">This view sees regional integration as a practical response to common problems. Cooperation starts in specific, technical, "functional" areas (like managing coal and steel production). This builds trust and creates a need for further cooperation.</p>
+                    </div>
+                    <div id="tab-3" class="tab-content p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Neofunctionalism: The 'Spillover' Effect</h3>
+                        <p class="text-lg text-gray-600">This theory builds on functionalism. It argues that cooperation in one area will create pressures for cooperation in other areas, a process called 'spillover'. For example, a single market creates a need for a single currency, which in turn creates a need for a common fiscal policy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Case Study - The European Union -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-blue-800">Case Study: The European Union</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The European Union (EU) is the most advanced and institutionalized example of regional integration in the world. It has evolved from a simple trade agreement into a powerful political and economic union that possesses many of the features of a state.</p>
+            <div class="mt-12 card bg-white p-6 rounded-xl shadow-lg">
+                <img src="https://placehold.co/800x400/eff6ff/3730a3?text=Map+of+the+European+Union" alt="A map of Europe highlighting the member states of the European Union." class="mx-auto rounded-md shadow-md">
+                <h3 class="text-2xl font-bold text-center mt-6 mb-4">Key Institutions</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div><strong>European Commission:</strong> The executive body, proposes legislation.</div>
+                    <div><strong>Council of the European Union:</strong> Represents member state governments.</div>
+                    <div><strong>European Parliament:</strong> The directly elected legislative body.</div>
+                    <div><strong>European Court of Justice:</strong> The supreme court for EU law.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Regionalism Beyond Europe -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">Regionalism Beyond Europe</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">While the EU is unique, regionalism has become a global phenomenon. A "new regionalism" has emerged since the 1990s, driven by globalization and the end of the Cold War.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">NAFTA / USMCA</h3>
+                    <p>The North American Free Trade Agreement (now the United States-Mexico-Canada Agreement) is a free trade zone, primarily focused on economic integration.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">ASEAN</h3>
+                    <p>The Association of Southeast Asian Nations focuses on economic, political, and security cooperation, but strongly emphasizes the principle of non-interference in the internal affairs of its members (the "ASEAN way").</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-blue-400 mb-2">African Union (AU)</h3>
+                    <p>The successor to the Organization of African Unity, the AU has an ambitious agenda that includes promoting democracy, human rights, and development. It has asserted the right to intervene in member states in cases of genocide and war crimes.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 20 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.interactive-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Introducing Global Politics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #b45309; /* Amber/Gold */
+            border-color: #b45309;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-800">Global Politics</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
+                    <a href="Ch1.html" class="text-blue-600 font-medium">Ch 1</a>
+                    <a href="Ch2.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 2</a>
+                    <a href="Ch3.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 3</a>
+                    <a href="Ch4.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 4</a>
+                    <a href="Ch5.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 5</a>
+                    <a href="Ch6.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 6</a>
+                    <a href="Ch7.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 7</a>
+                    <a href="Ch8.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 8</a>
+                    <a href="Ch9.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 9</a>
+                    <a href="Ch10.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 10</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="Ch1.html" class="block py-2 text-blue-600">Ch 1</a>
+                    <a href="Ch2.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 2</a>
+                    <a href="Ch3.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 3</a>
+                    <a href="Ch4.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 4</a>
+                    <a href="Ch5.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 5</a>
+                    <a href="Ch6.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 6</a>
+                    <a href="Ch7.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 7</a>
+                    <a href="Ch8.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 8</a>
+                    <a href="Ch9.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 9</a>
+                    <a href="Ch10.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 10</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 1: Introducing Global Politics</h1>
+            <p class="text-lg md:text-xl text-slate-300">A New and Interconnected World</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: What is Global Politics? -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-blue-900">What is Global Politics?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Global politics is a field of study that examines political issues and relationships that stretch across national borders and have implications for the whole world. It signifies a fundamental shift from the traditional focus on "international" politics.</p>
+            <div class="mt-12 grid md:grid-cols-3 gap-4 items-center text-center">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">International Politics</h3>
+                    <p>The traditional view. Politics is a "billiard ball" world of states interacting with each other, but remaining separate, sovereign entities.</p>
+                </div>
+                <div class="text-4xl text-blue-800 font-bold transform rotate-90 md:rotate-0">➡️</div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Global Politics</h3>
+                    <p>A new reality. We now live in an interconnected "cobweb" world where states, international organizations, and non-state actors are all intertwined.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Globalization -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-blue-900">Globalization: A Contested Concept</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Globalization is the central force shaping our world. It's the process through which our lives are increasingly influenced by events happening far away, creating a single global system. But what does it really mean? <br/><strong class="text-blue-800">Click the tabs to explore its different dimensions.</strong></p>
+            <div class="mt-12 bg-white rounded-xl shadow-xl border border-gray-200 p-4 md:p-8">
+                <!-- Tabs -->
+                <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b border-gray-200 mb-6 font-bold text-lg text-gray-500">
+                    <div class="interactive-tab active py-3 px-5 text-center" data-tab="1">💸 Economic Globalization</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="2">🌍 Cultural Globalization</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="3">🏛️ Political Globalization</div>
+                </div>
+                <!-- Tab Content -->
+                <div id="tab-content-container">
+                    <div id="tab-1" class="tab-content active p-4">
+                        <p class="text-lg text-gray-600">The process through which national economies have become increasingly integrated and interdependent. This is driven by multinational corporations (MNCs), mobile capital, and the growth of global institutions like the World Trade Organization (WTO).</p>
+                    </div>
+                    <div id="tab-2" class="tab-content p-4">
+                        <p class="text-lg text-gray-600">The process whereby information, commodities, and images produced in one part of the world enter a global flow. This has been accused of leading to "Americanization" or "McDonaldization," but it has also created new hybrid cultures.</p>
+                    </div>
+                    <div id="tab-3" class="tab-content p-4">
+                        <p class="text-lg text-gray-600">The process through which policy-making responsibilities are passed from national governments to international organizations. This has led to the rise of global governance and challenges the sovereignty of the nation-state.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Great Debates -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-blue-900">The Great Globalization Debate</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Is globalization a revolutionary new era or just business as usual? Scholars are deeply divided. Here are the three main perspectives.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500">
+                    <h3 class="text-2xl font-bold mb-2">The Hyperglobalists</h3>
+                    <p>Believe we now live in a "borderless world" where the nation-state is becoming obsolete. For them, globalization is a new epoch in human history, driven by the logic of the global market.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-bold mb-2">The Sceptics</h3>
+                    <p>Argue that globalization is a myth. They believe the world is no more interconnected than it was in the 19th century and is now breaking up into regional economic blocs (e.g., Europe, North America, East Asia).</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-500">
+                    <h3 class="text-2xl font-bold mb-2">The Transformationalists</h3>
+                    <p>Take the middle ground. They see globalization as a real and profound force that is reshaping politics and society, but in complex and uncertain ways. It's not the end of the state, but a transformation of its power and role.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: A New World Order? -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">A New World Order?</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">Globalization has sparked intense debates about the future of global politics. Two influential, and opposing, theories emerged in the post-Cold War era.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">The "End of History"</h3>
+                    <p>Francis Fukuyama's theory that the end of the Cold War signaled the final victory of Western liberal democracy as the ultimate form of human government. History, as a great clash of ideologies, was over.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">The "Clash of Civilizations"</h3>
+                    <p>Samuel Huntington's counter-argument. He predicted that the fundamental source of future conflict would not be ideological or economic, but cultural, with clashes occurring between major world civilizations (e.g., Western, Islamic, Confucian).</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 1 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tab functionality
+        const tabs = document.querySelectorAll('.interactive-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>

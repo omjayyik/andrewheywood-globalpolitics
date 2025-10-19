@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Global Governance and the Bretton Woods System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #15803d; /* Green */
+            border-color: #15803d;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 19: Global Governance & the Bretton Woods System</h1>
+            <p class="text-lg md:text-xl text-slate-300">Managing a Complex World Economy</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: What is Global Governance? -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-green-800">What is Global Governance?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Global governance refers to the various ways in which the world is managed, despite the absence of a world government. It is a complex, overlapping web of formal institutions, informal mechanisms, and relationships between states, international organizations, and non-state actors that work to tackle collective problems.</p>
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Global Government</h3>
+                    <p>A hierarchical system with a single, authoritative world state. This does NOT exist.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Global Governance</h3>
+                    <p>A horizontal system of cooperation and negotiation among multiple actors to create order and solve problems. This is the reality of our world.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Bretton Woods System -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-green-800">The Bretton Woods System</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The modern system of global economic governance was born in 1944 at Bretton Woods. Its goal was to create a stable world economy that balanced free trade with national autonomy, a system known as 'embedded liberalism'.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-3 gap-8 text-center">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">International Monetary Fund (IMF)</h3>
+                    <p>Designed to promote international monetary cooperation and exchange rate stability. It provides short-term loans to countries with balance-of-payments problems.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">World Bank</h3>
+                    <p>Initially created to fund post-war reconstruction, its role shifted to providing long-term loans for development projects in the Global South.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">GATT / WTO</h3>
+                    <p>The General Agreement on Tariffs and Trade (and its successor, the World Trade Organization) was established to create a forum for negotiating the reduction of trade barriers.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: The Shift to Neoliberalism -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-green-800">From Embedded Liberalism to Neoliberalism</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The Bretton Woods system broke down in the 1970s. Since then, global economic governance has been dominated by a more market-fundamentalist approach known as neoliberalism, most famously expressed in the <strong>'Washington Consensus'</strong>.</p>
+            <div class="mt-12 card bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-2xl text-center font-bold mb-4">The Washington Consensus: A Recipe for Development?</h3>
+                <p class="text-center text-lg text-gray-600 mb-6">This was a set of free-market policies that the IMF and World Bank promoted as the solution for developing countries. Key elements included:</p>
+                <ul class="list-disc list-inside space-y-2 max-w-2xl mx-auto">
+                    <li><strong>Privatization:</strong> Selling off state-owned industries.</li>
+                    <li><strong>Deregulation:</strong> Removing government controls on the economy.</li>
+                    <li><strong>Free Trade:</strong> Opening up markets to international competition.</li>
+                    <li><strong>Fiscal Austerity:</strong> Cutting public spending to reduce deficits.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 4: Reforming Global Governance -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">Reforming Global Governance</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">The institutions of global economic governance face a deep crisis of legitimacy. They have been criticized for being undemocratic, unaccountable, and for promoting policies that benefit the rich at the expense of the poor.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-green-400 mb-2">The Democratic Deficit</h3>
+                    <p>Key decisions are made by powerful, unelected bureaucrats. Furthermore, voting power in the IMF and World Bank is based on financial contributions, giving a huge advantage to the USA and other wealthy countries.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-green-400 mb-2">The Rise of the BRICS</h3>
+                    <p>Emerging economies like Brazil, Russia, India, China, and South Africa are demanding a greater voice in global economic governance. Frustrated with the slow pace of reform, they have created alternative institutions like the New Development Bank.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 19 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

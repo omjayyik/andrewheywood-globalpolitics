@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Human Rights and Humanitarian Intervention</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #1d4ed8; /* Blue */
+            border-color: #1d4ed8;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 13: Human Rights & Humanitarian Intervention</h1>
+            <p class="text-lg md:text-xl text-slate-300">Protecting Human Dignity</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: What are Human Rights? -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-blue-800">What are Human Rights?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Human rights are basic rights and freedoms to which all human beings are entitled, regardless of their nationality, race, religion, gender, or any other status. They are founded on the principle of universal human dignity.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-3 gap-8 text-center">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Universal</h3>
+                    <p>They belong to all humans everywhere.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Fundamental</h3>
+                    <p>They are inalienable; they cannot be taken away.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Absolute</h3>
+                    <p>They are basic and must be upheld in all circumstances.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Generations of Rights -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-blue-800">Generations of Rights</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The concept of human rights has evolved over time, often categorized into three "generations" that reflect different historical struggles. <br/><strong class="text-blue-700">Click the tabs to explore each generation.</strong></p>
+
+            <div class="mt-12 bg-white rounded-xl shadow-xl border border-gray-200 p-4 md:p-8">
+                <!-- Tabs -->
+                <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b border-gray-200 mb-6 font-bold text-lg text-gray-500">
+                    <div class="interactive-tab active py-3 px-5 text-center" data-tab="1">First Generation: 'Blue' Rights</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="2">Second Generation: 'Red' Rights</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="3">Third Generation: 'Green' Rights</div>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="tab-content-container">
+                    <div id="tab-1" class="tab-content active p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">First Generation: Civil and Political Rights</h3>
+                        <p class="text-lg text-gray-600">These are "negative" rights that protect individuals from the state. They include the right to life, liberty, and property; freedom of speech and religion; and the right to vote. They are enshrined in documents like the US Bill of Rights.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Second Generation: Economic, Social, and Cultural Rights</h3>
+                        <p class="text-lg text-gray-600">These are "positive" rights that require the state to act to ensure a basic standard of living for its citizens. They include the right to education, healthcare, employment, and social security. They are rooted in socialist traditions.</p>
+                    </div>
+                    <div id="tab-3" class="tab-content p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Third Generation: Solidarity or Collective Rights</h3>
+                        <p class="text-lg text-gray-600">These are rights that belong to groups or "peoples" rather than individuals. They include the right to development, self-determination, and a healthy environment. They are a product of the postcolonial era.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Universalism vs. Relativism -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-blue-800">Are Human Rights Universal?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The biggest debate in human rights is whether they are truly universal or a product of Western culture. This is the clash between universalism and cultural relativism.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The Universalist View</h3>
+                    <p>Argues that human rights are based on a shared human nature and are therefore applicable to all people in all societies. The <strong>1948 Universal Declaration of Human Rights (UDHR)</strong> is the foundational document of this perspective.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The Cultural Relativist View</h3>
+                    <p>Argues that there is no universal moral standard. All values are culturally determined. From this perspective, the idea of "universal" human rights can be seen as a form of cultural imperialism, imposing Western values on the rest of the world.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Humanitarian Intervention -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">Humanitarian Intervention: The Right to Protect?</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">If a state is committing massive human rights violations against its own people, should other states intervene, even with military force? This is the highly controversial question of humanitarian intervention.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">The Case FOR Intervention</h3>
+                    <p>Proponents argue that state sovereignty is not absolute and that the international community has a "Responsibility to Protect" (R2P) people from genocide, war crimes, and ethnic cleansing when their own government fails to do so.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">The Case AGAINST Intervention</h3>
+                    <p>Critics argue that humanitarian intervention is often a pretext for powerful states to pursue their own interests. They also warn that such interventions can violate international law, cause more suffering than they prevent, and are often applied selectively.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 13 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.interactive-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

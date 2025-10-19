@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Identity, Culture and Challenges to the West</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .accordion-item .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s ease-out;
+            opacity: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 1000px; /* Adjust as needed */
+            opacity: 1;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .accordion-item.active .icon-plus {
+            transform: rotate(45deg);
+        }
+        .icon-plus {
+            transition: transform 0.3s ease-out;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 8: Identity, Culture & Challenges to the West</h1>
+            <p class="text-lg md:text-xl text-slate-300">The Politics of Who We Are</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: The Rise of Identity Politics -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-fuchsia-800">The Rise of Identity Politics</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Identity politics is a style of politics that seeks to advance the interests of a particular group in society, based on a shared sense of collective identity (e.g., based on gender, religion, ethnicity, or race). It challenges the idea that politics should only be about universal values like liberty and justice.</p>
+            <div class="mt-8 bg-gray-200 p-6 rounded-lg max-w-4xl mx-auto text-center border-l-4 border-fuchsia-500">
+                <p class="italic text-xl">It is a shift from the politics of "what we want" (interests) to the politics of "who we are" (identity).</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Religion and Politics -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-fuchsia-800">The Resurgence of Religion</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">For much of the 20th century, it was assumed that modernization would lead to secularization (the decline of religion). Instead, the late 20th century saw a powerful resurgence of religion in politics, often in the form of <strong>religious fundamentalism</strong>. <strong class="text-fuchsia-700">Click to explore its key features.</strong></p>
+            <div class="mt-12 max-w-4xl mx-auto space-y-3">
+                <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">Religion as Politics</h3><div class="icon-plus text-3xl text-fuchsia-600 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>Fundamentalism is not just about personal faith; it is an ideology that seeks to organize all aspects of society—political, social, and economic—according to religious principles.</p>
+                </div></div>
+                <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">Anti-Modernism</h3><div class="icon-plus text-3xl text-fuchsia-600 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>Fundamentalists often reject the core values of the modern, secular West, such as liberalism, individualism, and materialism. They see these values as corrupting and morally bankrupt.</p>
+                </div></div>
+                 <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">Militancy</h3><div class="icon-plus text-3xl text-fuchsia-600 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>While not all fundamentalists are violent, they share a militant conviction in the absolute truth of their sacred texts and a desire to see this truth triumph over competing worldviews.</p>
+                </div></div>
+            </div>
+        </section>
+
+        <!-- Section 3: The 'Clash of Civilizations' -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-fuchsia-800">The 'Clash of Civilizations'?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Samuel Huntington's controversial 1993 thesis argued that the key source of conflict in the post-Cold War world would be cultural, not ideological or economic. He predicted that conflict would occur along the "fault lines" between the world's major civilizations.</p>
+            <div class="mt-12 card bg-white p-6 rounded-xl shadow-lg">
+                <img src="https://placehold.co/800x400/fdf4ff/7e22ce?text=Map+of+Huntington's+Civilizations" alt="A world map showing the approximate boundaries of Huntington's proposed civilizations: Western, Latin American, African, Islamic, Sinic (Chinese), Hindu, Orthodox, Buddhist, and Japanese." class="mx-auto rounded-md shadow-md">
+                <p class="text-center mt-4 text-gray-600">Huntington's thesis remains highly influential but is also heavily criticized for oversimplifying complex identities and for potentially encouraging a self-fulfilling prophecy of conflict.</p>
+            </div>
+        </section>
+
+        <!-- Section 4: Challenges to the West -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">Challenges to the West</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">The era of unchallenged Western dominance is being contested from multiple directions, both from within and from without.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-fuchsia-400 mb-2">Postcolonialism</h3>
+                    <p>This body of thought seeks to expose and challenge the enduring cultural and psychological legacies of colonialism. It highlights how Western cultural norms are often treated as universal, while non-Western cultures are marginalized.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-fuchsia-400 mb-2">Asian Values</h3>
+                    <p>A set of values promoted by some Asian leaders that supposedly reflect the unique culture of East Asia. These values—such as social harmony, respect for authority, and family loyalty—are often presented as an alternative to Western liberal individualism.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-fuchsia-400 mb-2">Multiculturalism</h3>
+                    <p>A challenge from within. Multiculturalism celebrates cultural diversity and argues that minority cultures should be protected and recognized. This challenges the traditional liberal idea of a single, universal citizenship where cultural differences are treated as private matters.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 8 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Accordion functionality
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        accordionItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                if (!isActive) { item.classList.add('active'); } 
+                else { item.classList.remove('active'); }
+            });
+        });
+
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

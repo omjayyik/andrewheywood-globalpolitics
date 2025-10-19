@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: War and Peace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #b91c1c; /* Red */
+            border-color: #b91c1c;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 10: War and Peace</h1>
+            <p class="text-lg md:text-xl text-slate-300">The Ultimate Questions of Global Politics</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: The Nature of War -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-red-800">The Changing Face of War</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">War, as Clausewitz famously said, is "the continuation of politics by other means." But the nature of war has changed dramatically over time. The era of conventional, state-versus-state warfare has increasingly been replaced by new, more complex forms of conflict.</p>
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Conventional Warfare</h3>
+                    <p>Fought by uniformed soldiers from recognizable states, who target each other's military forces. There is a clear distinction between soldiers and civilians. This was the dominant form of war for centuries.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The 'New' Wars</h3>
+                    <p>Characterized by the rise of non-state actors (guerrillas, terrorists), the blurring of lines between soldiers and civilians, and the use of identity politics to mobilize populations. These are often civil wars, not wars between states.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Why Does War Happen? -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-red-800">Why Does War Happen?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The major theories of global politics offer different explanations for the enduring phenomenon of war. <br/><strong class="text-red-700">Click the tabs to compare their views.</strong></p>
+             <div class="mt-12 bg-white rounded-xl shadow-xl border border-gray-200 p-4 md:p-8">
+                <!-- Tabs -->
+                <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b border-gray-200 mb-6 font-bold text-lg text-gray-500">
+                    <div class="interactive-tab active py-3 px-5 text-center" data-tab="1">🛡️ Realist View</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="2">🕊️ Liberal View</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="3">⛓️ Critical Views</div>
+                </div>
+                <!-- Tab Content -->
+                <div id="tab-content-container">
+                    <div id="tab-1" class="tab-content active p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The Realist View: An Inevitable Tragedy</h3>
+                        <p class="text-lg text-gray-600">For realists, war is an unavoidable feature of an anarchic world system. States are driven by self-interest and a lust for power, and in a self-help system with no world government, war is the ultimate tool for ensuring survival. The "security dilemma" ensures that even defensive military build-ups can be seen as a threat, leading to arms races and conflict.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content p-4">
+                         <h3 class="text-xl font-bold text-gray-800 mb-2">The Liberal View: A Solvable Problem</h3>
+                        <p class="text-lg text-gray-600">Liberals are more optimistic. They argue that while war is always possible, it can be prevented. Their "democratic peace thesis" holds that liberal democracies do not go to war with one another. They also believe that economic interdependence and international organizations make war less likely by making cooperation more beneficial.</p>
+                    </div>
+                    <div id="tab-3" class="tab-content p-4">
+                         <h3 class="text-xl font-bold text-gray-800 mb-2">Critical Views: A Product of Systems</h3>
+                        <p class="text-lg text-gray-600">Critical theorists see war as a product of deeper structures of power. Marxists argue that war is a product of the global capitalist system, driven by competition for resources and markets. Postcolonial thinkers highlight how military interventions are often a new form of imperialism.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Just War Theory -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-red-800">The Ethics of War: Just War Theory</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Is it ever morally acceptable to go to war? Just war theory provides a framework for judging the morality of conflict. It sets out ethical conditions for both going to war and for conduct within war.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500">
+                    <h3 class="text-2xl font-bold mb-2">Jus ad Bellum (Justice of War)</h3>
+                    <p>The conditions for justly going to war. This includes having a just cause (like self-defense), being a last resort, having a reasonable prospect of success, and being declared by a legitimate authority.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-500">
+                    <h3 class="text-2xl font-bold mb-2">Jus in Bello (Justice in War)</h3>
+                    <p>The conditions for just conduct during a war. This includes the principles of discrimination (not targeting non-combatants) and proportionality (using no more force than is necessary to achieve military goals).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Pathways to Peace -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">Pathways to Peace</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">How can peace and security be achieved in a turbulent world? Different approaches offer different strategies.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-red-400 mb-2">Balance of Power</h3>
+                    <p>The classic realist solution. Peace is maintained when power is distributed in such a way that no single state is strong enough to dominate all others. This creates a deterrent effect.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-red-400 mb-2">Collective Security</h3>
+                    <p>The liberal ideal, embodied in the United Nations. The idea is that an attack on any one state is an attack on all states, which will act together to repel the aggressor. "All for one, and one for all."</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-red-400 mb-2">Critical Security Studies</h3>
+                    <p>This approach challenges the traditional, state-centric view of security. It argues for "human security," focusing on protecting individuals from threats like poverty, disease, and environmental degradation, not just military threats.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 10 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.interactive-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

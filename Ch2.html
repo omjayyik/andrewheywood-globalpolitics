@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: The Historical Context</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .accordion-item .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s ease-out;
+            opacity: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 1000px; /* Adjust as needed */
+            opacity: 1;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .accordion-item.active .icon-plus {
+            transform: rotate(45deg);
+        }
+        .icon-plus {
+            transition: transform 0.3s ease-out;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-blue-600 hover:text-blue-800">Global Politics</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
+                    <a href="Ch1.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 1</a>
+                    <a href="Ch2.html" class="text-blue-600 font-medium">Ch 2</a>
+                    <a href="Ch3.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 3</a>
+                    <a href="Ch4.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 4</a>
+                    <a href="Ch5.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 5</a>
+                    <a href="Ch6.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 6</a>
+                    <a href="Ch7.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 7</a>
+                    <a href="Ch8.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 8</a>
+                    <a href="Ch9.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 9</a>
+                    <a href="Ch10.html" class="text-gray-600 hover:text-blue-600 font-medium">Ch 10</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="Ch1.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 1</a>
+                    <a href="Ch2.html" class="block py-2 text-blue-600">Ch 2</a>
+                    <a href="Ch3.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 3</a>
+                    <a href="Ch4.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 4</a>
+                    <a href="Ch5.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 5</a>
+                    <a href="Ch6.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 6</a>
+                    <a href="Ch7.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 7</a>
+                    <a href="Ch8.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 8</a>
+                    <a href="Ch9.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 9</a>
+                    <a href="Ch10.html" class="block py-2 text-gray-600 hover:text-blue-600">Ch 10</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 2: The Historical Context</h1>
+            <p class="text-lg md:text-xl text-slate-300">Making of the Modern World</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: From Westphalia to WWI -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-green-800">From Westphalia to WWI</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The modern global system wasn't born overnight. It evolved over centuries, starting with the birth of the sovereign state and expanding through an era of European dominance. <strong class="text-green-700">Click each event to explore.</strong></p>
+            <div class="mt-12 max-w-4xl mx-auto space-y-3">
+                <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">1648: The Peace of Westphalia</h3><div class="icon-plus text-3xl text-green-600 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>This treaty, ending the Thirty Years' War in Europe, is seen as the birth of the modern state system. It established the principle of state sovereignty, meaning that states have the right to control their own affairs without external interference. This created the "Westphalian system" of independent, self-governing states.</p>
+                </div></div>
+                <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">18th-19th Centuries: The Age of Imperialism</h3><div class="icon-plus text-3xl text-green-600 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>European powers, fueled by industrialization and nationalism, expanded their influence across the globe, creating vast colonial empires. This "first world/second world" divide established patterns of economic and political dominance that still resonate today.</p>
+                </div></div>
+                 <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">1914-1918: The 'Great War' (WWI)</h3><div class="icon-plus text-3xl text-green-600 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>The collapse of the European balance of power, fueled by intense nationalism and imperial rivalries, led to a devastating war. Its aftermath saw the collapse of empires, the rise of the USA as a world power, and the first attempt at global governance: the League of Nations.</p>
+                </div></div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Rise and Fall of Bipolarity -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-green-800">The Cold War Era (1945-90)</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">After WWII, a new global structure emerged: a bipolar world dominated by two superpowers, the USA and the USSR. This ideological struggle between capitalism and communism defined international politics for nearly half a century.</p>
+            <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="card bg-white p-6 rounded-xl shadow-lg"><h3 class="text-xl font-bold mb-2">Containment</h3><p>The core US strategy to prevent the spread of communism by "containing" it within its existing borders.</p></div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg"><h3 class="text-xl font-bold mb-2">Proxy Wars</h3><p>The superpowers avoided direct conflict but fought each other indirectly by backing opposing sides in regional conflicts (e.g., Korea, Vietnam, Afghanistan).</p></div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg"><h3 class="text-xl font-bold mb-2">Détente</h3><p>A period of eased tensions in the late 1960s and 1970s, characterized by arms control agreements and increased cooperation.</p></div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg"><h3 class="text-xl font-bold mb-2">The 'Second' Cold War</h3><p>A renewal of superpower hostility in the late 1970s and early 1980s, which ultimately led to the collapse of the Soviet Union in 1991.</p></div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Post-Cold War World -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-green-800">The Post-Cold War Era</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The collapse of the Soviet Union ushered in a new, uncertain era. Initial optimism about a "new world order" soon gave way to new challenges and a reshaping of global power.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
+                    <h3 class="text-2xl font-bold mb-2">A Unipolar Moment</h3>
+                    <p>The USA emerged as the world's sole superpower, leading to a period of unrivaled American dominance or "hegemony" in the 1990s.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-500">
+                    <h3 class="text-2xl font-bold mb-2">The Rise of Others</h3>
+                    <p>The 21st century has seen the rise of new global players, especially China, leading to debates about a shift towards a multipolar world with several great powers.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500">
+                    <h3 class="text-2xl font-bold mb-2">New Security Challenges</h3>
+                    <p>The post-Cold War world saw a rise in intra-state conflicts (civil wars), humanitarian crises, and the emergence of "rogue states" and non-state actors as major security threats.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: 9/11 and the 'War on Terror' -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">9/11 and the 'War on Terror'</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">The September 11, 2001 attacks marked a pivotal turning point, ushering in a new era of global politics defined by the threat of terrorism and the controversial "war on terror."</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-green-400 mb-2">A New Kind of Threat</h3>
+                    <p>The attacks highlighted the danger posed by non-state actors like al-Qaeda, which operate globally and defy traditional state-based security responses.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-green-400 mb-2">The Bush Doctrine</h3>
+                    <p>In response, the US adopted a new, more aggressive foreign policy, characterized by a willingness to act pre-emptively and unilaterally, as seen in the 2003 invasion of Iraq.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 2 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Accordion functionality
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        accordionItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                if (!isActive) { item.classList.add('active'); } 
+                else { item.classList.remove('active'); }
+            });
+        });
+
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

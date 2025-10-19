@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: The Nation in a Global Age</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #1e3a8a; /* Navy Blue */
+            border-color: #1e3a8a;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 7: The Nation in a Global Age</h1>
+            <p class="text-lg md:text-xl text-slate-300">An Enduring Idea</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: Nation vs. State -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-blue-900">Nation vs. State</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The terms 'nation' and 'state' are often used interchangeably, but they refer to very different concepts. Understanding this distinction is fundamental to the study of global politics.</p>
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The Nation: A Cultural Community</h3>
+                    <p>The nation is a cultural and psychological entity. It is a group of people who share a common language, religion, history, or culture, and who see themselves as a distinct political community. It is a "psycho-political" construct.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The State: A Political Entity</h3>
+                    <p>The state is a political and legal entity. It is a sovereign body with a defined territory, a permanent population, and an effective government. It is the primary actor in international law.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: What is a Nation? -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-blue-900">What is a Nation?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">There are two main ways of thinking about what makes a nation a nation. <br/><strong class="text-blue-700">Click the tabs to explore these competing ideas.</strong></p>
+
+            <div class="mt-12 bg-white rounded-xl shadow-xl border border-gray-200 p-4 md:p-8">
+                <!-- Tabs -->
+                <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b border-gray-200 mb-6 font-bold text-lg text-gray-500">
+                    <div class="interactive-tab active py-3 px-5 text-center" data-tab="1">The Cultural Nation</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="2">The Political Nation</div>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="tab-content-container">
+                    <div id="tab-1" class="tab-content active p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The Cultural Nation: A Community of Descent</h3>
+                        <p class="text-lg text-gray-600">This view sees nations as organic communities that are bound together by a shared ethnic or cultural heritage. National identity is inherited, not chosen. This can lead to an exclusive and ethnically-defined nationalism.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The Political Nation: A Community of Citizens</h3>
+                        <p class="text-lg text-gray-600">This view sees nations as social constructs, bound together by a shared sense of citizenship and a commitment to common political values and principles (patriotism). National identity is inclusive and can be adopted by anyone who chooses to embrace these values.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: The Fate of the Nation -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">The Fate of the Nation</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">Has globalization made the nation obsolete? Or has it provoked a powerful nationalist backlash?</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="card bg-slate-700 p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">Thesis: The Rise of Cosmopolitanism</h3>
+                    <p>This argument suggests that globalization, migration, and cultural exchange are eroding traditional national identities and fostering a "post-national" sense of identity, where people see themselves as "citizens of the world."</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">Antithesis: The Nationalist Backlash</h3>
+                    <p>This argument suggests that for many, globalization is a profound threat to their culture and way of life. This has fueled a powerful resurgence of nationalism, often in the form of populism and anti-immigrant sentiment, as people seek the security of their national community.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 7 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.interactive-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

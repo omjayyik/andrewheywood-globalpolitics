@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Society in a Global Age</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .accordion-item .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s ease-out;
+            opacity: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 1000px; /* Adjust as needed */
+            opacity: 1;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .accordion-item.active .icon-plus {
+            transform: rotate(45deg);
+        }
+        .icon-plus {
+            transition: transform 0.3s ease-out;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 6: Society in a Global Age</h1>
+            <p class="text-lg md:text-xl text-slate-300">Beyond the State</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: What is Global Civil Society? -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-teal-800">The Rise of Global Civil Society</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Global civil society refers to a realm of private, non-state groups and associations that operate on a global scale. These actors—from community groups to international NGOs—have created a new sphere of politics that exists alongside the formal world of states and international organizations.</p>
+            <div class="mt-8 bg-gray-200 p-6 rounded-lg max-w-4xl mx-auto text-center border-l-4 border-teal-500">
+                <p class="italic text-xl">It is the "third pillar" of global governance, alongside the state and the market.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Key Actors - NGOs -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-teal-800">Who are the Global Actors?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Non-governmental organizations (NGOs) are the heart of global civil society. They are private, non-profit bodies that are independent of government control and dedicated to advocating for a particular cause. <strong class="text-teal-700">Click to explore their roles.</strong></p>
+             <div class="mt-12 max-w-4xl mx-auto space-y-3">
+                <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">Advocacy & Agenda-Setting</h3><div class="icon-plus text-3xl text-teal-600 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>NGOs act as "norm entrepreneurs," using media campaigns and lobbying to bring issues to the attention of the global public and policymakers. <strong>Example:</strong> Greenpeace's campaigns against whaling.</p>
+                </div></div>
+                <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">Monitoring & Enforcement</h3><div class="icon-plus text-3xl text-teal-600 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>NGOs often act as watchdogs, monitoring whether governments and corporations are complying with international laws and norms. <strong>Example:</strong> Human Rights Watch's reports on abuses worldwide.</p>
+                </div></div>
+                 <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">Service Delivery</h3><div class="icon-plus text-3xl text-teal-600 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>Many NGOs are on the front lines of delivering humanitarian aid and development assistance, often in areas where states are unwilling or unable to act. <strong>Example:</strong> Doctors Without Borders providing medical care in conflict zones.</p>
+                </div></div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Anti-Globalization Movement -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-teal-800">The Counter-Movement</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Globalization has not been a smooth or uncontested process. Since the late 1990s, a powerful and diverse "anti-globalization" or "anti-capitalist" movement has emerged to challenge the dominant neoliberal model.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-teal-500">
+                    <h3 class="text-2xl font-bold mb-2">Who Are They?</h3>
+                    <p>A loose, global network of activists, environmentalists, trade unionists, indigenous groups, and anarchists. A "movement of movements."</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-500">
+                    <h3 class="text-2xl font-bold mb-2">What Are Their Criticisms?</h3>
+                    <p>They argue that neoliberal globalization deepens poverty, increases inequality, destroys the environment, and promotes corporate power at the expense of democracy.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500">
+                    <h3 class="text-2xl font-bold mb-2">Key Events</h3>
+                    <p>The 1999 "Battle of Seattle" against the WTO is seen as the movement's coming-out party. The World Social Forum provides an alternative venue to the elite World Economic Forum.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Nation in a Global Age -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">The Nation in a Global Age</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">Has globalization created a single "global village," erasing national identities? Or has it provoked a backlash, strengthening the forces of nationalism? The evidence is contradictory.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="card bg-slate-700 p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-2">The Rise of Cosmopolitanism</h3>
+                    <p>The idea that we are "citizens of the world." Globalization, migration, and cultural exchange may be fostering a post-national sense of identity, where people feel a connection to all of humanity.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold text-teal-400 mb-2">The Persistence of Nationalism</h3>
+                    <p>For many, globalization is seen as a threat to their culture and way of life. This can lead to a powerful backlash in the form of resurgent nationalism, religious fundamentalism, and anti-immigrant sentiment.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 6 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Accordion functionality
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        accordionItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                if (!isActive) { item.classList.add('active'); } 
+                else { item.classList.remove('active'); }
+            });
+        });
+
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

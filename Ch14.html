@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: International Law</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .accordion-item .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s ease-out;
+            opacity: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 1000px; /* Adjust as needed */
+            opacity: 1;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        .accordion-item.active .icon-plus {
+            transform: rotate(45deg);
+        }
+        .icon-plus {
+            transition: transform 0.3s ease-out;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 14: International Law</h1>
+            <p class="text-lg md:text-xl text-slate-300">Order and Justice in a Global Age</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: What is International Law? -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-blue-900">What is International Law?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">International law is the set of rules, norms, and standards generally accepted as binding between states. It is a key institution of world order, providing a framework for cooperation and a basis for resolving disputes. But where does this law come from?</p>
+            <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="card bg-white p-6 rounded-xl shadow-lg"><h3 class="text-xl font-bold mb-2">Treaties</h3><p>Formal, written agreements between states that are legally binding. The most important source of international law.</p></div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg"><h3 class="text-xl font-bold mb-2">Customary Law</h3><p>Law that derives from the past practices of states, which they follow out of a sense of legal obligation.</p></div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg"><h3 class="text-xl font-bold mb-2">General Principles</h3><p>Underlying principles of law that are recognized by most legal systems around the world.</p></div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg"><h3 class="text-xl font-bold mb-2">Judicial Decisions</h3><p>Rulings from international courts, which help to interpret and clarify the law.</p></div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Great Debate: Is it Really Law? -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-blue-900">The Great Debate: Is it Really Law?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The biggest controversy surrounding international law is whether it can be considered "law" in the same way as domestic law. This debate pits realists against liberals and other theorists.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The Sceptical View (Realists)</h3>
+                    <p>Realists argue that international law is not really law because there is no world government to enforce it. In an anarchic world, states will only obey international law when it is in their national interest to do so. For realists, international law is a tool of the powerful.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The Proponent View (Liberals & Others)</h3>
+                    <p>Liberals argue that international law is a crucial feature of global politics. They point out that states obey international law most of the time because it is in their long-term interest to live in a stable, orderly world. Law provides a basis for cooperation and helps to build international norms.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Adjudicating International Law -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-blue-900">Adjudicating International Law</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The growth of international law has been accompanied by the creation of international courts to interpret and apply it. Two of the most important are the ICJ and the ICC.</p>
+            <div class="mt-12 max-w-4xl mx-auto space-y-3">
+                <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">The International Court of Justice (ICJ)</h3><div class="icon-plus text-3xl text-blue-700 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>The principal judicial organ of the United Nations, also known as the "World Court." Its role is to settle legal disputes submitted to it by states. However, its jurisdiction is voluntary; it can only hear cases if both states involved agree to participate.</p>
+                </div></div>
+                <div class="accordion-item bg-white rounded-lg shadow-md border border-gray-200 p-6 cursor-pointer"><div class="flex justify-between items-center"><h3 class="text-xl font-bold text-gray-800">The International Criminal Court (ICC)</h3><div class="icon-plus text-3xl text-blue-700 font-light">+</div></div><div class="accordion-content text-gray-600">
+                    <p>Established in 2002, the ICC is the world's first permanent court for prosecuting individuals accused of the most serious international crimes: genocide, war crimes, and crimes against humanity. It is a court of last resort, only acting when national courts are unable or unwilling to do so.</p>
+                </div></div>
+            </div>
+        </section>
+
+        <!-- Section 4: The Laws of War -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">The Laws of War</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">One of the oldest and most important branches of international law is the attempt to regulate the conduct of armed conflict. This body of law, also known as International Humanitarian Law, seeks to bring a measure of humanity to the inhumanity of war.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">The Geneva Conventions</h3>
+                    <p>A series of treaties, most famously updated in 1949 after WWII, that establish the standards for the humane treatment of the victims of war, including prisoners of war (POWs) and civilians.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-2">War Crimes</h3>
+                    <p>A serious violation of the laws of war, giving rise to individual criminal responsibility. The concept of war crimes challenges the idea that soldiers are just "following orders" and holds individuals accountable for atrocities committed during conflict.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 14 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Accordion functionality
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        accordionItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                if (!isActive) { item.classList.add('active'); } 
+                else { item.classList.remove('active'); }
+            });
+        });
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

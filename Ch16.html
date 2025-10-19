@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Global Environmental Issues</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #166534; /* Green */
+            border-color: #166534;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 16: Global Environmental Issues</h1>
+            <p class="text-lg md:text-xl text-slate-300">Politics of the Planet</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: The Global Commons -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-green-800">The 'Tragedy of the Commons'</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Many environmental problems arise from the 'tragedy of the commons'. This concept describes a situation where individual actors, acting rationally in their own self-interest, deplete a shared public resource, even when it is not in anyone's long-term interest to do so. The "commons" are areas and resources that belong to no single state, such as the high seas, the atmosphere, and Antarctica.</p>
+        </section>
+
+        <!-- Section 2: Approaches to Environmentalism -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-green-800">Shades of Green: Approaches to Environmentalism</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Not all environmentalists agree on the causes of the crisis or the best way to solve it. Their views range from reformist to radical. <br/><strong class="text-green-700">Click the tabs to explore the main perspectives.</strong></p>
+
+            <div class="mt-12 bg-white rounded-xl shadow-xl border border-gray-200 p-4 md:p-8">
+                <!-- Tabs -->
+                <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b border-gray-200 mb-6 font-bold text-lg text-gray-500">
+                    <div class="interactive-tab active py-3 px-5 text-center" data-tab="1">Reformist Ecology</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="2">Radical Ecology</div>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="tab-content-container">
+                    <div id="tab-1" class="tab-content active p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Reformist Ecology: Working Within the System</h3>
+                        <p class="text-lg text-gray-600">This is the mainstream approach. It believes that environmental problems can be solved without fundamentally changing our way of life. It seeks a balance between economic growth and environmental protection through the concept of <strong>sustainable development</strong>—"development that meets the needs of the present without compromising the ability of future generations to meet their own needs."</p>
+                    </div>
+                    <div id="tab-2" class="tab-content p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Radical Ecology: A New Worldview</h3>
+                        <p class="text-lg text-gray-600">This perspective argues that the environmental crisis is not a technical problem, but a symptom of a sick society. It calls for a radical transformation of our values, lifestyles, and economic system. This includes "deep ecologists" who reject anthropocentrism (the idea that humans are the center of the universe) in favor of ecocentrism (a nature-centered worldview).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Climate Change -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-green-800">The Ultimate Collective Problem: Climate Change</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Climate change, caused by the emission of greenhouse gases from human activity, is arguably the greatest challenge facing humanity. It is a classic 'tragedy of the commons' problem, as the costs of climate change are global, but the benefits of burning fossil fuels are national and individual.</p>
+            <div class="mt-12 card bg-white p-6 rounded-xl shadow-lg">
+                <img src="https://placehold.co/800x400/f0fdf4/14532d?text=Diagram+of+the+Greenhouse+Effect" alt="A simple diagram showing how greenhouse gases trap heat from the sun in the Earth's atmosphere." class="mx-auto rounded-md shadow-md">
+            </div>
+        </section>
+        
+        <!-- Section 4: Global Environmental Governance -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">Global Environmental Governance</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">The international community has struggled to create effective mechanisms to tackle global environmental problems. Progress has been slow and often blocked by conflicts of interest.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-green-400 mb-2">The North–South Divide</h3>
+                    <p>The biggest obstacle to international cooperation. Developing countries in the Global South argue that developed countries in the North are historically responsible for the crisis and should bear the greatest burden. They also argue that they have a "right to develop" and should not have to sacrifice their economic growth for a problem they did not create.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-green-400 mb-2">Key Agreements</h3>
+                    <p>Despite the challenges, some progress has been made through international treaties. The <strong>1997 Kyoto Protocol</strong> was the first to set binding targets for greenhouse gas emissions, but it was weakened by the refusal of the USA to ratify it. The <strong>2015 Paris Agreement</strong> took a different approach, with all countries making voluntary commitments to reduce their emissions.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 16 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.interactive-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

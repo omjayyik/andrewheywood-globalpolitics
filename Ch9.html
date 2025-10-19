@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Power and Twenty-First-Century World Order</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #b91c1c; /* Red */
+            border-color: #b91c1c;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 9: Power & 21st-Century World Order</h1>
+            <p class="text-lg md:text-xl text-slate-300">Who Rules the World?</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: The Nature of Power -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-red-800">The Changing Nature of Power</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Power is the ability to influence outcomes. In global politics, this has traditionally meant military and economic might. But in an increasingly interconnected world, the nature of power itself is changing.</p>
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-red-500">
+                    <h3 class="text-2xl font-bold mb-2">Hard Power: The Power to Command</h3>
+                    <p>The ability to achieve one's goals through coercion ('sticks') and inducements ('carrots'). This relies on military force and economic resources. It is tangible and measurable.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-bold mb-2">Soft Power: The Power to Persuade</h3>
+                    <p>The ability to achieve one's goals through attraction and persuasion, rather than force. This relies on the appeal of a country's culture, political values, and foreign policies. It is intangible and harder to measure.</p>
+                </div>
+            </div>
+             <div class="mt-8 card bg-white p-6 rounded-xl shadow-lg border-t-4 border-gray-500 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-2 text-center">Smart Power</h3>
+                    <p class="text-center">The most effective strategies combine hard and soft power. This "smart power" approach recognizes that neither military force nor cultural attraction alone is sufficient to tackle complex global challenges.</p>
+                </div>
+        </section>
+
+        <!-- Section 2: Shapes of World Order -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-red-800">Shapes of World Order</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The structure of global power—the "world order"—can be understood by the number of great powers that dominate the system. <br/><strong class="text-red-700">Click the tabs to explore the different models.</strong></p>
+
+            <div class="mt-12 bg-white rounded-xl shadow-xl border border-gray-200 p-4 md:p-8">
+                <!-- Tabs -->
+                <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b border-gray-200 mb-6 font-bold text-lg text-gray-500">
+                    <div class="interactive-tab active py-3 px-5 text-center" data-tab="1">Unipolarity</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="2">Bipolarity</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="3">Multipolarity</div>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="tab-content-container">
+                    <div id="tab-1" class="tab-content active p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Unipolarity: One Great Power</h3>
+                        <p class="text-lg text-gray-600">An international system dominated by a single superpower or 'hegemon'. <strong>Example:</strong> The post-Cold War world, dominated by the USA. Proponents argue this is a stable system, as the hegemon can act as a 'world police'. Critics argue it leads to arrogance and imperialism.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content p-4">
+                         <h3 class="text-xl font-bold text-gray-800 mb-2">Bipolarity: Two Great Powers</h3>
+                        <p class="text-lg text-gray-600">An international system revolving around two major power blocs. <strong>Example:</strong> The Cold War (USA vs. USSR). Proponents argue this is a very stable system, as the two powers keep each other in check through a balance of terror (mutually assured destruction).</p>
+                    </div>
+                    <div id="tab-3" class="tab-content p-4">
+                         <h3 class="text-xl font-bold text-gray-800 mb-2">Multipolarity: Many Great Powers</h3>
+                        <p class="text-lg text-gray-600">An international system with three or more great powers. <strong>Example:</strong> The 19th-century Concert of Europe. Proponents argue this system is more flexible and allows for shifting alliances. Critics warn that it is inherently unstable and prone to miscalculation and conflict.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: US Hegemony -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-red-800">US Hegemony: Benevolent or Predatory?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Since the end of the Cold War, the world has lived in an era of US hegemony. But is this dominance a force for good or ill in the world?</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The Case FOR US Hegemony</h3>
+                    <p>This view argues that the US acts as a "benign" hegemon, providing stability, security, and promoting liberal values like democracy and free trade, which benefits the entire international community.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The Case AGAINST US Hegemony</h3>
+                    <p>This view argues that the US is a "predatory" hegemon that uses its power to advance its own narrow national interests, often acting as an imperial power that disregards international law.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: A Post-American World? -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">A Post-American World?</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">Is US dominance coming to an end? A new debate is raging about the rise of emerging powers and the future shape of the world order.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-red-400 mb-2">The Rise of China</h3>
+                    <p>China's spectacular economic growth has led many to predict it will soon overtake the US as the world's leading power. This has raised concerns about a new Cold War or a "power transition" war between a rising power and a declining hegemon.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-red-400 mb-2">A Multipolar Future?</h3>
+                    <p>Others argue that we are moving towards a truly multipolar world, with several major powers (including the USA, China, Russia, India, Brazil, and the EU) competing and cooperating. This could be a more complex and potentially more unstable world than the one we have known.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 9 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.interactive-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+

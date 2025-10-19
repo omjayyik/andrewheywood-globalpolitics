@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Poverty and Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 3.5rem;
+            }
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .interactive-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        .interactive-tab.active {
+            color: #a16207; /* Yellow */
+            border-color: #a16207;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animated-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-slate-900 text-white text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-wider">Chapter 15: Poverty and Development</h1>
+            <p class="text-lg md:text-xl text-slate-300">A World of Haves and Have-Nots</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: Understanding Poverty -->
+        <section class="my-16 animated-section">
+            <h2 class="section-title text-center text-yellow-800">Understanding Poverty and Justice</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">The existence of extreme poverty in a world of unprecedented wealth raises profound questions about global justice. But how do we define poverty, and what does justice mean in a global context?</p>
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Absolute Poverty</h3>
+                    <p>A standard of poverty that is based on the minimum income needed to meet basic human needs for food, shelter, and clothing. The World Bank defines this as living on less than $1.90 a day.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Relative Poverty</h3>
+                    <p>A standard of poverty in which people are deprived of the living standards and amenities that are customary in their society. It is a measure of inequality, not just destitution.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Why is the World Unequal? -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-yellow-800">Why is the World Unequal?</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Why are some countries rich while others are poor? The two main theoretical traditions offer starkly different explanations for global inequality. <br/><strong class="text-yellow-700">Click the tabs to compare them.</strong></p>
+
+            <div class="mt-12 bg-white rounded-xl shadow-xl border border-gray-200 p-4 md:p-8">
+                <!-- Tabs -->
+                <div class="flex flex-col sm:flex-row justify-center sm:space-x-8 border-b border-gray-200 mb-6 font-bold text-lg text-gray-500">
+                    <div class="interactive-tab active py-3 px-5 text-center" data-tab="1">The Liberal View</div>
+                    <div class="interactive-tab py-3 px-5 text-center" data-tab="2">The Structuralist View</div>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="tab-content-container">
+                    <div id="tab-1" class="tab-content active p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The Liberal View: Internal Factors</h3>
+                        <p class="text-lg text-gray-600">This perspective argues that poverty is caused by internal factors within developing countries themselves. <strong>Modernization theory</strong>, for example, suggests that poverty is caused by cultural barriers to modernization, such as traditional beliefs and corrupt institutions. The solution is for developing countries to embrace free-market capitalism.</p>
+                    </div>
+                    <div id="tab-2" class="tab-content p-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">The Structuralist View: External Factors</h3>
+                        <p class="text-lg text-gray-600">This perspective, rooted in Marxism, argues that poverty is caused by the exploitative structure of the global capitalist system. <strong>Dependency theory</strong> suggests that the wealthy "core" countries have underdeveloped the "periphery" countries, locking them into a cycle of poverty and dependence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: The Debate Over Aid -->
+        <section class="my-24 animated-section">
+            <h2 class="section-title text-center text-yellow-800">The Great Aid Debate</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto text-center">Does foreign aid help or hinder development? This is one of the most contentious issues in global politics.</p>
+            <div class="mt-12 grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The Case FOR Aid</h3>
+                    <p>Supporters argue that aid is a moral imperative and a practical necessity. It can save lives, fund crucial infrastructure projects, and help countries escape the "poverty trap." The UN has long called for rich countries to commit 0.7% of their national income to development assistance.</p>
+                </div>
+                <div class="card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">The Case AGAINST Aid</h3>
+                    <p>Critics argue that aid is often ineffective and can even be harmful. They claim that it fosters dependency, props up corrupt governments, and distorts local markets. Some argue that free trade, not aid, is the real key to development.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: From State to Market -->
+        <section class="my-24 bg-slate-800 text-white rounded-2xl p-8 md:p-16 animated-section">
+            <div class="text-center">
+                <h2 class="section-title">From State to Market</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto">The dominant approach to development has shifted dramatically over the past several decades, from a belief in state-led industrialization to a faith in the power of the free market.</p>
+            </div>
+            <div class="mt-12 grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Orthodox Development (pre-1980s)</h3>
+                    <p>The early model of development focused on state-led industrialization, often through protectionist policies designed to shield "infant industries" from foreign competition.</p>
+                </div>
+                <div class="card bg-slate-700 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Neoliberal Development (post-1980s)</h3>
+                    <p>The rise of the "Washington Consensus" marked a shift to a market-led model. This approach emphasizes free trade, privatization, and deregulation as the universal recipe for economic growth, often imposed on developing countries through IMF and World Bank structural adjustment programs.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center bg-slate-800 text-slate-400 p-6">
+        <p>Interactive Infographic based on Chapter 15 of "Global Politics" by Andrew Heywood.</p>
+    </footer>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.interactive-tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.dataset.tab;
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('tab-' + tabId).classList.add('active');
+            });
+        });
+        // Scroll animation for sections
+        const animatedSections = document.querySelectorAll('.animated-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedSections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
+
