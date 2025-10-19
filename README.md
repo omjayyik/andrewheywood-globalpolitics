@@ -1,6 +1,6 @@
-# 📘 Social Research Methods — Learning Summary
+# 📘 Global Politics by Andrew Heywood — Learning Summary
 
-A complete educational website featuring 21 interactive chapter summaries covering key concepts in social research methodology.
+A complete educational website featuring 21 interactive chapter summaries covering key concepts in Global Politics.
 
 ## 🌐 Website Structure
 
@@ -94,5 +94,6 @@ This website is designed for educational purposes and provides:
 - Professional presentation suitable for academic use
 
 ---
+
 
 **Note**: This website is optimized for modern browsers and includes progressive enhancement for older browsers.
