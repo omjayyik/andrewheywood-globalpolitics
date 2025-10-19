@@ -3,452 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Politics - Andrew Heywood | Interactive Study Guide</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>📘 Global Politics — Learning Summary</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .section-title {
-            font-weight: 900;
-            font-size: 2.5rem;
-            line-height: 1.2;
-        }
-        @media (min-width: 768px) {
-            .section-title {
-                font-size: 3.5rem;
-            }
-        }
-        .card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .animated-section {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .animated-section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .chapter-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .search-box {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-        }
-    </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">📘 Global Politics</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#chapters" class="nav-link">Chapters</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- Header Section -->
-    <header class="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white text-center py-20 px-4">
-        <div class="max-w-6xl mx-auto">
-            <h1 class="text-4xl md:text-7xl font-black mb-6 uppercase tracking-wider">Global Politics</h1>
-            <p class="text-xl md:text-2xl text-slate-300 mb-8">An Interactive Study Guide</p>
-            <p class="text-lg md:text-xl text-slate-400 max-w-4xl mx-auto">Based on Andrew Heywood's comprehensive textbook, this interactive website brings global politics to life through engaging infographics, interactive elements, and modern design.</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">📘 Global Politics</h1>
+            <p class="hero-subtitle">Learning Summary</p>
+            <p class="hero-description">
+                A comprehensive collection of chapter summaries covering key concepts in Global Politics 
+                Navigate through 21 chapters to explore different aspects of Global Politics.
+            </p>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto p-4 md:p-8">
-
-        <!-- Search Section -->
-        <section class="my-16 animated-section">
-            <div class="bg-white rounded-2xl shadow-xl p-8 text-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Search Topics</h2>
-                <div class="max-w-2xl mx-auto">
-                    <input type="text" id="searchInput" placeholder="Search for topics like 'globalization', 'war', 'democracy'..." 
-                           class="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-xl focus:border-blue-500 focus:outline-none">
-                    <div id="searchResults" class="mt-4 text-left"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Chapter Overview -->
-        <section class="my-16 animated-section">
-            <h2 class="section-title text-center text-blue-900 mb-12">Explore All 21 Chapters</h2>
-            <p class="text-lg text-gray-600 max-w-4xl mx-auto text-center mb-12">
-                Each chapter is presented as an interactive infographic with engaging visuals, clickable elements, and comprehensive coverage of key concepts in global politics.
-            </p>
-        </section>
-
-        <!-- Chapter Grid -->
-        <section class="my-16 animated-section">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="chapters" class="chapters-section">
+            <div class="container">
+                <h2 class="section-title">Chapter Overview</h2>
+                <p class="section-description">
+                    Click on any chapter below to access detailed summaries and interactive content.
+                </p>
                 
-                <!-- Chapter 1 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-blue-100 text-blue-800 text-sm font-bold px-3 py-1 rounded-full">Ch 1</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Introducing Global Politics</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A New and Interconnected World - Understanding the shift from international to global politics and the forces of globalization.</p>
-                    <a href="Ch1.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 2 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-500">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-green-100 text-green-800 text-sm font-bold px-3 py-1 rounded-full">Ch 2</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">The Historical Context</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Making of the Modern World - From Westphalia to the present, tracing the evolution of the global system.</p>
-                    <a href="Ch2.html" class="inline-flex items-center text-green-600 hover:text-green-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 3 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-500">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-purple-100 text-purple-800 text-sm font-bold px-3 py-1 rounded-full">Ch 3</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Theories of Global Politics</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Explaining a Complex World - Realism, liberalism, and critical theories that shape our understanding.</p>
-                    <a href="Ch3.html" class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 4 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-500">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-orange-100 text-orange-800 text-sm font-bold px-3 py-1 rounded-full">Ch 4</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">The Economy in a Global Age</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Capitalism, Crises, and Contention - Understanding global economic systems and their political implications.</p>
-                    <a href="Ch4.html" class="inline-flex items-center text-orange-600 hover:text-orange-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 5 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-red-100 text-red-800 text-sm font-bold px-3 py-1 rounded-full">Ch 5</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">The State & Foreign Policy</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Has Globalization Changed Everything? - The role of states in an interconnected world.</p>
-                    <a href="Ch5.html" class="inline-flex items-center text-red-600 hover:text-red-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 6 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-indigo-500">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-sm font-bold px-3 py-1 rounded-full">Ch 6</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Society in a Global Age</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Civil Society and Social Movements - The power of non-state actors in global politics.</p>
-                    <a href="Ch6.html" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 7 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-pink-500">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-pink-100 text-pink-800 text-sm font-bold px-3 py-1 rounded-full">Ch 7</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Nation and Identity</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Nationalism and the Politics of Identity - How identity shapes global politics.</p>
-                    <a href="Ch7.html" class="inline-flex items-center text-pink-600 hover:text-pink-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 8 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-teal-500">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-teal-100 text-teal-800 text-sm font-bold px-3 py-1 rounded-full">Ch 8</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Gender in Global Politics</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Feminist Perspectives - Understanding gender dynamics in international relations.</p>
-                    <a href="Ch8.html" class="inline-flex items-center text-teal-600 hover:text-teal-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 9 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-500">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-yellow-100 text-yellow-800 text-sm font-bold px-3 py-1 rounded-full">Ch 9</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Global Governance</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">The United Nations and Beyond - International organizations and global cooperation.</p>
-                    <a href="Ch9.html" class="inline-flex items-center text-yellow-600 hover:text-yellow-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 10 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-red-100 text-red-800 text-sm font-bold px-3 py-1 rounded-full">Ch 10</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">War and Peace</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">The Ultimate Questions - Understanding conflict and pathways to peace.</p>
-                    <a href="Ch10.html" class="inline-flex items-center text-red-600 hover:text-red-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 11 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-blue-100 text-blue-800 text-sm font-bold px-3 py-1 rounded-full">Ch 11</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Nuclear Proliferation</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">The Nuclear Question - Weapons of mass destruction and global security.</p>
-                    <a href="Ch11.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 12 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-green-100 text-green-800 text-sm font-bold px-3 py-1 rounded-full">Ch 12</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Terrorism and Political Violence</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">The New Face of Conflict - Understanding terrorism in the modern world.</p>
-                    <a href="Ch12.html" class="inline-flex items-center text-green-600 hover:text-green-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 13 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-purple-100 text-purple-800 text-sm font-bold px-3 py-1 rounded-full">Ch 13</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Human Rights</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Universal Rights in a Global World - The politics of human rights protection.</p>
-                    <a href="Ch13.html" class="inline-flex items-center text-purple-600 hover:text-purple-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 14 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-orange-100 text-orange-800 text-sm font-bold px-3 py-1 rounded-full">Ch 14</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">International Law</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Rules and Justice in Global Politics - The role of law in international relations.</p>
-                    <a href="Ch14.html" class="inline-flex items-center text-orange-600 hover:text-orange-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 15 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-yellow-100 text-yellow-800 text-sm font-bold px-3 py-1 rounded-full">Ch 15</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Poverty and Development</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A World of Haves and Have-Nots - Global inequality and development challenges.</p>
-                    <a href="Ch15.html" class="inline-flex items-center text-yellow-600 hover:text-yellow-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 16 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-indigo-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 text-sm font-bold px-3 py-1 rounded-full">Ch 16</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Global Environmental Politics</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Climate Change and Sustainability - Environmental challenges in global politics.</p>
-                    <a href="Ch16.html" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 17 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-pink-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-pink-100 text-pink-800 text-sm font-bold px-3 py-1 rounded-full">Ch 17</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Global Health Politics</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Pandemics and Global Health - Health issues in international relations.</p>
-                    <a href="Ch17.html" class="inline-flex items-center text-pink-600 hover:text-pink-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 18 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-teal-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-teal-100 text-teal-800 text-sm font-bold px-3 py-1 rounded-full">Ch 18</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Migration and Refugees</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">People on the Move - Migration and refugee politics in a globalized world.</p>
-                    <a href="Ch18.html" class="inline-flex items-center text-teal-600 hover:text-teal-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 19 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-gray-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-gray-100 text-gray-800 text-sm font-bold px-3 py-1 rounded-full">Ch 19</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Global Media and Communication</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Information and Power - The role of media in global politics.</p>
-                    <a href="Ch19.html" class="inline-flex items-center text-gray-600 hover:text-gray-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 20 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-cyan-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-cyan-100 text-cyan-800 text-sm font-bold px-3 py-1 rounded-full">Ch 20</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Global Ethics</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Moral Questions in Global Politics - Ethics and justice in international relations.</p>
-                    <a href="Ch20.html" class="inline-flex items-center text-cyan-600 hover:text-cyan-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-                <!-- Chapter 21 -->
-                <div class="card bg-white rounded-xl shadow-lg p-6 border-l-4 border-violet-600">
-                    <div class="flex items-center mb-4">
-                        <span class="bg-violet-100 text-violet-800 text-sm font-bold px-3 py-1 rounded-full">Ch 21</span>
-                        <h3 class="text-xl font-bold text-gray-800 ml-3">Global Futures</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Imagining Tomorrow's World - Scenarios for the future of global politics.</p>
-                    <a href="Ch21.html" class="inline-flex items-center text-violet-600 hover:text-violet-800 font-semibold">
-                        Explore Chapter →
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="my-24 animated-section">
-            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-12">
-                <h2 class="section-title text-center text-blue-900 mb-12">Interactive Learning Features</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="text-center">
-                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl">🎯</span>
+                <div class="chapters-grid">
+                    <a href="Ch1.html" class="chapter-card">
+                        <div class="chapter-number">01</div>
+                        <div class="chapter-content">
+                            <h3>Introducing Global Politics</h3>
+                            <p>A New and Interconnected World</p>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Interactive Elements</h3>
-                        <p class="text-gray-600">Clickable tabs, accordions, and animations make complex concepts engaging and memorable.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl">📱</span>
+                    </a>
+                    
+                    <a href="Ch2.html" class="chapter-card">
+                        <div class="chapter-number">02</div>
+                        <div class="chapter-content">
+                            <h3>The Historical Context</h3>
+                            <p>Making of the Modern World</p>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Mobile Responsive</h3>
-                        <p class="text-gray-600">Optimized for all devices - study anywhere, anytime on your phone, tablet, or computer.</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <span class="text-2xl">🔍</span>
+                    </a>
+                    
+                    <a href="Ch3.html" class="chapter-card">
+                        <div class="chapter-number">03</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 3</h3>
+                            <p>Chapter Description</p>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Easy Navigation</h3>
-                        <p class="text-gray-600">Quick access to any chapter with search functionality to find specific topics instantly.</p>
-                    </div>
+                    </a>
+                    
+                    <a href="Ch4.html" class="chapter-card">
+                        <div class="chapter-number">04</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 4</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch5.html" class="chapter-card">
+                        <div class="chapter-number">05</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 5</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch6.html" class="chapter-card">
+                        <div class="chapter-number">06</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 6</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch7.html" class="chapter-card">
+                        <div class="chapter-number">07</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 7</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch8.html" class="chapter-card">
+                        <div class="chapter-number">08</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 8</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch9.html" class="chapter-card">
+                        <div class="chapter-number">09</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 9</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch10.html" class="chapter-card">
+                        <div class="chapter-number">10</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 10</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch11.html" class="chapter-card">
+                        <div class="chapter-number">11</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 11</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch12.html" class="chapter-card">
+                        <div class="chapter-number">12</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 12</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch13.html" class="chapter-card">
+                        <div class="chapter-number">13</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 13</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch14.html" class="chapter-card">
+                        <div class="chapter-number">14</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 14</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch15.html" class="chapter-card">
+                        <div class="chapter-number">15</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 15</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch16.html" class="chapter-card">
+                        <div class="chapter-number">16</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 16</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch17.html" class="chapter-card">
+                        <div class="chapter-number">17</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 17</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch18.html" class="chapter-card">
+                        <div class="chapter-number">18</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 18</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch19.html" class="chapter-card">
+                        <div class="chapter-number">19</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 19</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch20.html" class="chapter-card">
+                        <div class="chapter-number">20</div>
+                        <div class="chapter-content">
+                            <h3>Chapter 20</h3>
+                            <p>Chapter Description</p>
+                        </div>
+                    </a>
+                    
+                    <a href="Ch21.html" class="chapter-card">
+                        <div class="chapter-number">21</div>
+                        <div class="chapter-content">
+                            <h3>Global Futures</h3>
+                            <p>Imagining Tomorrow's World</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <footer class="bg-slate-800 text-slate-400 py-12">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h3 class="text-2xl font-bold text-white mb-4">Global Politics Study Guide</h3>
-            <p class="text-lg mb-6">Based on Andrew Heywood's "Global Politics" - An Interactive Learning Experience</p>
-            <div class="border-t border-slate-700 pt-6">
-                <p>&copy; 2024 Interactive Study Guide. Educational content based on Andrew Heywood's Global Politics.</p>
-            </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Azhari Setiawan — For Learning Purpose Only</p>
         </div>
     </footer>
 
-    <script>
-        // Search functionality
-        const searchInput = document.getElementById('searchInput');
-        const searchResults = document.getElementById('searchResults');
-        
-        const chapters = [
-            { title: "Introducing Global Politics", file: "Ch1.html", topics: ["globalization", "international politics", "interconnected world", "global system"] },
-            { title: "The Historical Context", file: "Ch2.html", topics: ["westphalia", "cold war", "world war", "history", "bipolarity"] },
-            { title: "Theories of Global Politics", file: "Ch3.html", topics: ["realism", "liberalism", "marxism", "constructivism", "feminism", "theories"] },
-            { title: "The Economy in a Global Age", file: "Ch4.html", topics: ["economy", "capitalism", "neoliberalism", "bretton woods", "crisis"] },
-            { title: "The State & Foreign Policy", file: "Ch5.html", topics: ["state", "foreign policy", "sovereignty", "power", "hard power", "soft power"] },
-            { title: "Society in a Global Age", file: "Ch6.html", topics: ["civil society", "social movements", "non-state actors", "NGOs"] },
-            { title: "Nation and Identity", file: "Ch7.html", topics: ["nationalism", "identity", "nation", "ethnicity", "culture"] },
-            { title: "Gender in Global Politics", file: "Ch8.html", topics: ["gender", "feminism", "women", "patriarchy", "equality"] },
-            { title: "Global Governance", file: "Ch9.html", topics: ["governance", "united nations", "international organizations", "cooperation"] },
-            { title: "War and Peace", file: "Ch10.html", topics: ["war", "peace", "conflict", "security", "just war", "balance of power"] },
-            { title: "Nuclear Proliferation", file: "Ch11.html", topics: ["nuclear", "proliferation", "weapons", "arms control", "deterrence"] },
-            { title: "Terrorism and Political Violence", file: "Ch12.html", topics: ["terrorism", "violence", "al-qaeda", "isis", "security"] },
-            { title: "Human Rights", file: "Ch13.html", topics: ["human rights", "universal rights", "justice", "dignity", "freedom"] },
-            { title: "International Law", file: "Ch14.html", topics: ["international law", "legal system", "justice", "courts", "treaties"] },
-            { title: "Poverty and Development", file: "Ch15.html", topics: ["poverty", "development", "inequality", "aid", "global south"] },
-            { title: "Global Environmental Politics", file: "Ch16.html", topics: ["environment", "climate change", "sustainability", "green politics"] },
-            { title: "Global Health Politics", file: "Ch17.html", topics: ["health", "pandemic", "disease", "WHO", "public health"] },
-            { title: "Migration and Refugees", file: "Ch18.html", topics: ["migration", "refugees", "immigration", "displacement", "asylum"] },
-            { title: "Global Media and Communication", file: "Ch19.html", topics: ["media", "communication", "information", "propaganda", "news"] },
-            { title: "Global Ethics", file: "Ch20.html", topics: ["ethics", "morality", "justice", "values", "principles"] },
-            { title: "Global Futures", file: "Ch21.html", topics: ["future", "scenarios", "predictions", "trends", "tomorrow"] }
-        ];
-
-        searchInput.addEventListener('input', function() {
-            const query = this.value.toLowerCase();
-            if (query.length < 2) {
-                searchResults.innerHTML = '';
-                return;
-            }
-
-            const matches = chapters.filter(chapter => 
-                chapter.title.toLowerCase().includes(query) ||
-                chapter.topics.some(topic => topic.includes(query))
-            );
-
-            if (matches.length === 0) {
-                searchResults.innerHTML = '<p class="text-gray-500">No matching chapters found.</p>';
-                return;
-            }
-
-            searchResults.innerHTML = matches.map(chapter => `
-                <div class="p-4 border border-gray-200 rounded-lg mb-2 hover:bg-gray-50">
-                    <a href="${chapter.file}" class="block">
-                        <h4 class="font-semibold text-blue-600">${chapter.title}</h4>
-                        <p class="text-sm text-gray-600">Topics: ${chapter.topics.join(', ')}</p>
-                    </a>
-                </div>
-            `).join('');
-        });
-
-        // Scroll animation for sections
-        const animatedSections = document.querySelectorAll('.animated-section');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        animatedSections.forEach(section => observer.observe(section));
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

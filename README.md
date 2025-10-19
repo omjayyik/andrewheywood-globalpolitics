@@ -1,84 +1,98 @@
-# Global Politics - Interactive Study Guide
+# 📘 Social Research Methods — Learning Summary
 
-An interactive website based on Andrew Heywood's "Global Politics" textbook, featuring 21 comprehensive chapters with engaging infographics, interactive elements, and modern responsive design.
+A complete educational website featuring 21 interactive chapter summaries covering key concepts in social research methodology.
 
-## Features
+## 🌐 Website Structure
 
-- **21 Interactive Chapters**: Each chapter is presented as a beautifully designed infographic with clickable elements
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Search Functionality**: Quick search across all chapters to find specific topics
-- **Modern UI/UX**: Clean, professional design with smooth animations and transitions
-- **Easy Navigation**: Sticky navigation bar with quick access to all chapters
+```
+├── index.html          # Main landing page with chapter overview
+├── style.css           # Custom CSS styling (clean, academic design)
+├── script.js           # JavaScript for navigation and interactions
+├── Ch1.html           # Chapter 1: Introducing Global Politics
+├── Ch2.html           # Chapter 2: The Historical Context
+├── Ch3.html           # Chapter 3: [Chapter Title]
+├── ...
+├── Ch21.html          # Chapter 21: Global Futures
+└── README.md          # This file
+```
 
-## Chapter Overview
+## ✨ Features
 
-1. **Introducing Global Politics** - A New and Interconnected World
-2. **The Historical Context** - Making of the Modern World
-3. **Theories of Global Politics** - Explaining a Complex World
-4. **The Economy in a Global Age** - Capitalism, Crises, and Contention
-5. **The State & Foreign Policy** - Has Globalization Changed Everything?
-6. **Society in a Global Age** - Civil Society and Social Movements
-7. **Nation and Identity** - Nationalism and the Politics of Identity
-8. **Gender in Global Politics** - Feminist Perspectives
-9. **Global Governance** - The United Nations and Beyond
-10. **War and Peace** - The Ultimate Questions of Global Politics
-11. **Nuclear Proliferation** - The Nuclear Question
-12. **Terrorism and Political Violence** - The New Face of Conflict
-13. **Human Rights** - Universal Rights in a Global World
-14. **International Law** - Rules and Justice in Global Politics
-15. **Poverty and Development** - A World of Haves and Have-Nots
-16. **Global Environmental Politics** - Climate Change and Sustainability
-17. **Global Health Politics** - Pandemics and Global Health
-18. **Migration and Refugees** - People on the Move
-19. **Global Media and Communication** - Information and Power
-20. **Global Ethics** - Moral Questions in Global Politics
-21. **Global Futures** - Imagining Tomorrow's World
+- **Clean, Academic Design**: Minimalistic white background with professional typography
+- **Responsive Layout**: Works perfectly on desktop, tablet, and mobile devices
+- **Chapter Navigation**: Easy navigation between all 21 chapters
+- **Interactive Elements**: Tabs, accordions, and animations for engaging learning
+- **Keyboard Support**: Use arrow keys to navigate between chapters
+- **GitHub Pages Ready**: All links are relative for perfect GitHub Pages deployment
 
-## Interactive Elements
+## 🚀 Getting Started
 
-Each chapter includes:
-- **Clickable Tabs**: Compare different theories and perspectives
-- **Accordion Sections**: Expandable content for detailed exploration
-- **Animated Sections**: Smooth scroll-triggered animations
-- **Hover Effects**: Interactive cards and elements
-- **Mobile-Friendly**: Touch-optimized for mobile devices
+1. **Local Development**: Simply open `index.html` in any modern web browser
+2. **GitHub Pages**: Upload all files to a GitHub repository and enable Pages
+3. **Web Server**: Upload files to any web server - no server-side processing required
 
-## Technology Stack
+## 🎯 Navigation
 
-- **HTML5**: Semantic markup structure
-- **Tailwind CSS**: Utility-first CSS framework
-- **Vanilla JavaScript**: Interactive functionality
-- **Google Fonts**: Inter font family for typography
-- **Responsive Design**: Mobile-first approach
+### Main Page (index.html)
+- Lists all 21 chapters as clickable cards
+- Clean grid layout with chapter numbers and descriptions
+- Responsive design that adapts to screen size
 
-## Getting Started
+### Chapter Pages (Ch1.html - Ch21.html)
+- **Home Button**: Returns to main page
+- **Previous/Next Buttons**: Navigate between chapters sequentially
+- **Keyboard Shortcuts**: 
+  - `←` Previous chapter
+  - `→` Next chapter
+  - `Home` Return to main page
 
-1. Open `index.html` in your web browser
-2. Use the search bar to find specific topics
-3. Click on any chapter to explore its content
-4. Use the navigation bar to move between chapters
-5. On mobile, use the hamburger menu for navigation
+## 🎨 Design Philosophy
 
-## Educational Use
+- **Academic Focus**: Clean, readable design suitable for educational content
+- **Accessibility**: High contrast, keyboard navigation, screen reader friendly
+- **Performance**: Lightweight CSS and JavaScript, fast loading
+- **Consistency**: Uniform styling across all pages
 
-This website is designed for:
-- **Students** studying international relations and global politics
-- **Educators** looking for interactive teaching materials
-- **General readers** interested in understanding global affairs
-- **Self-learners** seeking comprehensive political science resources
+## 📱 Responsive Breakpoints
 
-## Browser Compatibility
+- **Desktop**: 1200px+ (full grid layout)
+- **Tablet**: 768px - 1199px (adapted grid)
+- **Mobile**: < 768px (single column, stacked layout)
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Mobile browsers (iOS Safari, Chrome Mobile)
+## 🔧 Technical Details
 
-## License
+- **HTML5**: Semantic markup with proper structure
+- **CSS3**: Modern styling with flexbox and grid
+- **Vanilla JavaScript**: No external dependencies
+- **Font**: Inter (Google Fonts) for excellent readability
+- **Icons**: Unicode emojis for cross-platform compatibility
 
-Educational content based on Andrew Heywood's "Global Politics" textbook. This interactive study guide is created for educational purposes.
+## 📄 License
+
+© 2025 Azhari Setiawan — For Learning Purpose Only
+
+## 🚀 Deployment
+
+### GitHub Pages
+1. Create a new repository
+2. Upload all files to the repository
+3. Go to Settings → Pages
+4. Select "Deploy from a branch" → "main"
+5. Your site will be available at `https://username.github.io/repository-name`
+
+### Other Hosting
+- Upload all files to any web server
+- Ensure `index.html` is in the root directory
+- All internal links are relative and will work correctly
+
+## 🎓 Educational Use
+
+This website is designed for educational purposes and provides:
+- Interactive learning materials
+- Easy navigation between topics
+- Mobile-friendly access for students
+- Professional presentation suitable for academic use
 
 ---
 
-**Note**: This website provides an interactive learning experience to complement the study of global politics. It is designed to make complex political concepts more accessible and engaging through modern web technologies.
+**Note**: This website is optimized for modern browsers and includes progressive enhancement for older browsers.
